@@ -209,8 +209,8 @@ header {
     font-weight: 700;
     text-align: center;
   }
-  .createNewListDimain-section {
-    padding: 1rem 2rem;
+  .main-section {
+    padding: 1rem 5rem;
   }
 
   .paragraph, .heading{
