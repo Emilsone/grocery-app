@@ -1,0 +1,291 @@
+* {
+  margin: unset;
+  padding: unset;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #1b1a1b;
+  color: #ededed;
+}
+
+header {
+  margin: 30px 0px;
+}
+
+
+.heading {
+  color: 000000;
+  font-size: 1.7rem;
+  font-weight: 700;
+  /* text-align: center; */
+  padding: 0.9rem 2.9rem;
+}
+
+.paragraph {
+  color: 000000;
+  font-size: 1.0rem;
+  /* text-align: center; */
+  padding: 0rem 2.9rem;
+}
+
+.main-section {
+  padding: 3rem 12rem;
+}
+
+#deleteAllBtn {
+  border: unset;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 0 .5rem;
+}
+
+
+#itemInput label {
+  /* display: block; */
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#itemInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  place-content: start;
+}
+
+#itemInput input {
+  height: 3.5rem;
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  /* display: flex;
+    justify-content: space-around; */
+  width: 16rem;
+  font-size: 1rem;
+  /* text-align: start; */
+  padding: 0 0.2rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #3E3E41;
+  color: #ffffff !important;
+}
+
+#itemInput input:focus {
+  border: 1px solid #ffffff;
+}
+#itemInput input::placeholder {
+  font-family: 'Karla', sans-serif;
+}
+
+#updateForm label {
+  /* display: block; */
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+
+#addItemButton {
+  border: unset;
+  background-color: #ffffff;
+  color: #3E3E41;
+  padding: 0.4rem;
+  cursor: pointer;
+  width: 13.5rem;
+  height: 3.6rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin: -2px;
+  font-family: 'Karla', sans-serif;
+}
+.plus-sign{
+  background-color: #1b1a1b;
+  color: #ffffff;
+  padding: 7px 10px;
+  border-radius: 70px;
+}
+.deleteSign{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 9px 14px;
+  border-radius: 70px;
+  font-size: 1.3rem;
+}
+
+.item {
+  width: 60rem;
+  margin: 20px auto 0 .5rem;
+  padding: 0px 10px;
+  min-height: 2.8rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.checkbox {
+  height: 60%;
+  width: 2.5rem;
+}
+
+.itemInfo {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+
+.deleteButton {
+  border: unset;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: transparent;
+}
+
+
+.deleteButton:active {
+  margin-top: 3px;
+}
+
+.purchased {
+  background: red;
+  color: #fff;
+  min-height: 3.8rem;
+}
+
+
+#totalPriceDiv {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Emilson {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #aaaaaa;
+  padding: 4.5rem 0rem;
+  text-align: center;
+}
+
+@media  screen and (max-width: 900px) {
+  #itemInput {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 15px;
+    place-content: center;
+  }
+  #itemInput input {
+    width: 20rem;
+
+  }
+  #addItemButton {
+    width: 20rem;
+    height: 3.6rem;
+  }
+  .item {
+    max-width: 18rem;
+    margin: auto;
+   
+  }
+  .itemContainer {
+    margin: 30px 0px;
+  }
+  #totalPriceDiv {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .createNewListDimain-section {
+    padding: 1rem 2rem;
+  }
+
+  .paragraph, .heading{
+    text-align: center;
+  }
+  .purchased {
+    background: red;
+    color: #fff;
+    min-height: 3.7rem;
+  }
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+
+  /* margin: 10px; */
+  background-color: #018C40;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
